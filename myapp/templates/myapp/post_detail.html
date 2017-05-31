@@ -1,0 +1,11 @@
+{% extends "myapp/base.html" %}
+
+{% block content %}
+
+<h1>詳細</h1>
+<p>{{ post.title }}</p>
+<p>{{ post.text }}</p>
+<p><a href="{% url 'myapp:post_update' post.pk %}">更新</a></p>
+<p><a href="{% url 'myapp:post_delete' post.pk %}">削除</a></p>
+
+{% endblock %}

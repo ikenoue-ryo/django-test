@@ -1,0 +1,11 @@
+{% extends "myapp/base.html" %}
+
+{% block content %}
+
+<h1>一覧</h1>
+<p><a href="{% url 'myapp:post_create' %}">新規作成</a></p>
+{% for post in post_list %}
+    <p><a href="{% url 'myapp:post_detail' post.pk %}">{{ post.title }}</a></p>
+{% endfor %}
+
+{% endblock %}
