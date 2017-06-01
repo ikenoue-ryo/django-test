@@ -10,7 +10,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='django-torina-tutorial1',
     version='0.1',
-    find_packages(exclude=('myproject',)),
+    packages=find_packages(exclude=('myproject',)),
     include_package_data=True,
     license='MIT License',
     description='Django Simple App',
