@@ -10,7 +10,7 @@ Requirement
 
 :Python: 3.6
 :Django: 1.11
-
+ 
 
 Quick start
 ===========
@@ -25,4 +25,3 @@ Quick start
 3. うごかす::
 
     python manage.py runserver
-
