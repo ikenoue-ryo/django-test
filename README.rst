@@ -14,19 +14,24 @@ Requirement
 
 Quick start
 ===========
-1. "myapp" を、INSTALLED_APPS に足す。::
+1. pipでインストールする。::
+
+    pip install git+https://github.com/naritotakizawa/django-torina-tutorial1
+
+
+2. あなたのDjangoプロジェクトのINSTALLED_APPSに、"myapp" を足す。::
 
     INSTALLED_APPS = [
         ...
         'myapp',
     ]
 
-2. urls.pyに以下のようにしてincludeしてください。::
+3. urls.pyに以下のようにしてincludeしてください。::
 
     url(r'^', include('myapp.urls')),
 
-3. `python manage.py migrate`
+4. `python manage.py migrate`
 
-4. `python manage.py runserver`
+5. `python manage.py runserver`
 
-5. http://127.0.0.1:8000 へアクセス!
+6. http://127.0.0.1:8000 へアクセス!
