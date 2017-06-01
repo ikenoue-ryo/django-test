@@ -14,14 +14,19 @@ Requirement
 
 Quick start
 ===========
-1. プロジェクトのクローン::
+1. "myapp" を、INSTALLED_APPS に足す。::
 
-    git clone https://github.com/naritotakizawa/django-torina-tutorial1
+    INSTALLED_APPS = [
+        ...
+        'myapp',
+    ]
 
-2. モデルのmigrate::
+2. urls.pyに以下のようにしてincludeしてください。::
 
-    python manage.py migrate
+    url(r'^', include('myapp.urls')),
 
-3. うごかす::
+3. `python manage.py migrate`
 
-    python manage.py runserver
+4. `python manage.py runserver`
+
+5. http://127.0.0.1:8000 へアクセス!
