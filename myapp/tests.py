@@ -100,7 +100,7 @@ class PostUpdateTests(TestCase):
         """getで通常のアクセスを行う."""
         post = Post.objects.create(title='あいうえお', text='あ')
         response = self.client.get(
-            reverse('myapp:post_detail', kwargs={'pk': post.pk}),
+            reverse('myapp:post_update', kwargs={'pk': post.pk}),
         )
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, post.title)
@@ -113,7 +113,7 @@ class PostDeleteTests(TestCase):
     def test_not_fount_pk_get(self):
         """データを作らないまま、存在しないpkでgetアクセス."""
         response = self.client.get(
-            reverse('myapp:post_update', kwargs={'pk': 1}),
+            reverse('myapp:post_delete', kwargs={'pk': 1}),
         )
         self.assertEqual(response.status_code, 404)
 
@@ -121,7 +121,7 @@ class PostDeleteTests(TestCase):
         """getで通常のアクセスを行う."""
         post = Post.objects.create(title='あいうえお', text='あ')
         response = self.client.get(
-            reverse('myapp:post_detail', kwargs={'pk': post.pk}),
+            reverse('myapp:post_delete', kwargs={'pk': post.pk}),
         )
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, post.title)
