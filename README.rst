@@ -1,6 +1,8 @@
 =======================
 django-torina-tutorial1
 =======================
+.. image:: https://travis-ci.org/naritotakizawa/django-torina-tutorial1.svg?branch=master
+    :target: https://travis-ci.org/naritotakizawa/django-torina-tutorial1
 
 ここは説明です
 
