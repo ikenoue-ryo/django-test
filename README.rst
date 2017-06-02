@@ -10,8 +10,8 @@ django-torina-tutorial1
 Requirement
 ===========
 
-:Python: 3.6
-:Django: 1.11
+:Python: 3.4以上
+:Django: 1.10以上
  
 
 Quick start
