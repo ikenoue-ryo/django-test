@@ -30,4 +30,5 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
     ],
+    test_suite = "runtests.runtests",
 )

@@ -13,4 +13,4 @@ install:
     - pip install django==$DJANGO_VERSION
 
 script:
-    - python -Wall manage.py test
+    - python -Wall setup.py test
