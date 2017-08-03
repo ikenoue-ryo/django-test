@@ -4,6 +4,9 @@ django-torina-tutorial1
 .. image:: https://travis-ci.org/naritotakizawa/django-torina-tutorial1.svg?branch=master
     :target: https://travis-ci.org/naritotakizawa/django-torina-tutorial1
 
+.. image:: https://coveralls.io/repos/github/naritotakizawa/django-torina-tutorial1/badge.svg
+    :target: https://coveralls.io/github/naritotakizawa/django-torina-tutorial1
+
 ここは説明です
 
 
