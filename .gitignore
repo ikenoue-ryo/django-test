@@ -1,4 +1,17 @@
 *.pyc
 *.pyo
+.eggs
+*.egg-info
+.cache
+.coverage
+.tox
 __pycache__
+
 db.sqlite3
+manage.py
+/myproject/
+
+dist/
+build/
+django_torina_tutorial.egg-info/
+
