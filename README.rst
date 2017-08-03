@@ -21,7 +21,7 @@ Quick start
 ===========
 1. pipでインストールする。::
 
-    pip install git+https://github.com/naritotakizawa/django-torina-tutorial1
+    pip install -U https://github.com/naritotakizawa/django-torina-tutorial1/archive/master.tar.gz
 
 
 2. あなたのDjangoプロジェクトのINSTALLED_APPSに、"myapp" を足す。::
